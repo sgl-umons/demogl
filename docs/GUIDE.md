@@ -32,7 +32,7 @@ Page administration:
 Allez sur `https://spring.io/quickstart` et utilisez `https://start.spring.io/` pour créer la structure de base de votre application Spring Boot.
 
 Voici les paramètres recommandés pour la stack choisie:
-  (Remplacez example et demo. Configuration: Properties ou YAML n'a pas d'importance)
+  (Dans le project metadata, remplacez `example` et `demo`. Pour le choix de Configuration: Properties ou YAML n'a pas d'importance)
 
 Ajoutez les dépendances suivantes : Spring Web, Spring Data JPA, PostgreSQL Driver.
 
@@ -63,21 +63,21 @@ Frontend
 
 Rendez-vous sur `https://supabase.com/` et suivez les étapes pour créer un projet en "free plan". Vous serez tout au début amenés à choisir un mot de passe pour ce projet, celui-ci correspond au mot de passe de votre DB gardez-le ! 
 
-Comme c'est le backend en Java qui va directement se connecter à la base de données, on choisit la configuration suivante : 
+Comme c'est le backend en Java qui va directement se connecter à la base de données, choisissez la configuration suivante : 
 
 ![image7](images/image7.png)
 
-(Vous pouvez aussi essayer Direct connection, mais par expérience cette option a tendance à ne pas fonctionner correctement avec SpringBoot)
+(Vous pouvez aussi essayer `Direct connection`, mais par expérience cette option a tendance à ne pas fonctionner correctement avec SpringBoot)
 
 Dans le code Java, allez dans le fichier de configuration `application.properties` ou `application.yaml` pour configurer la connection à la base de données.
 
 Faites attention d'utiliser un fichier `.env` avec vos variables d'environnement, voir la section Remarques plus bas.
 
-### application.yaml
+Fichier `application.yaml`:
 
 ![image8](images/image8.png)
 
-### application.properties
+Fichier `application.properties`:
 
 ```java
 spring.application.name=demo
@@ -105,7 +105,7 @@ Voici le rendu visuel, venant de Supabase:
 
 La spécification OpenAPI peut être généré de manière automatique du code source Java Spring Boot:
 
-- Dans build.gradle ajoutez la dépendance `'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3'` qui génère  l'OpenAPI au lancement de votre code grâce aux @RestController.
+- Dans `build.gradle` ajoutez la dépendance `'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.3'` qui génère  l'OpenAPI au lancement de votre code grâce aux @RestController.
 
 ![image10](images/image10.png)
 
