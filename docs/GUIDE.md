@@ -1,31 +1,31 @@
 # Architecture
 
-Indépendant d'une OS spécifique - fonctionne sur Linux, Mac OS, Windows.
+L'architecture est indépendante d'une OS spécifique. L'application devrait fonctionner sur Linux, Mac OS, Windows.
 
-## Développement
-
+Les technologies suivantes ont été utilisées pour le **développement** de l'application:
 - Frontend en Vue.js (TypeScript)
 - Backend en Java 25 + Spring Boot + OpenAPI REST + ORM JPA
 - Base de données relationelle en PostgreSQL
 
-## Déploiement et hébergement
-
+Les technologies suivantes ont été choisies pour le **déploiement** et l'**hébergement** de l'application:
 - Docker pour la containerisation du backend, hébergé sur Render
 - Frontend hébergé sur Vercel
 - Database hébergé sur Supabase
 
 # Application web
 
-- L'application web affiche la liste des membres de l'UMONS selon chaque faculté/département/service... Il y a des filtres par date, on voit initialement uniquement les membres au contrat actif aujourd'hui.
-- Un panel d'administration permet d'ajouter, supprimer, et modifier les facultés, dépatements, ...
+L'application web affiche la liste des membres de l'UMONS par faculté, département ou service. Par défaut on voit initialement uniquement les membres au contrat actif aujourd'hui, mais il y a des filtres par date. Un panel d'administration permet d'ajouter, de supprimer, ou de modifier les facultés, départements, etcetera. Les screenshots suivants donnent un aperçu partiel de l'application.
 
+Page listant tous les membres:
 ![image3](images/image3.png)
 
+Page pour un membre individuel:
 ![image4](images/image4.png)
 
+Page administration:
 ![image5](images/image5.png)
 
-#  Ordre d'exécution
+#  Instructions d'installation et d'exécution
 
 ## Configuration de Spring Boot:
 
