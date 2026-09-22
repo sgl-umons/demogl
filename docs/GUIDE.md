@@ -109,17 +109,13 @@ La spécification OpenAPI peut être généré de manière automatique du code s
 
 ![image10](images/image10.png)
 
-- **Version UI accessible sur :**
+- Vous devriez maintenant pouvoir accéder à la spécification de l'API sur:
 
-  http://localhost:8080/swagger-ui.html
+  L'UI de Swagger: `http://localhost:8080/swagger-ui.html`
 
-  **Version JSON :**
+  En version JSON: `http://localhost:8080/v3/api-docs`
 
-  http://localhost:8080/v3/api-docs
-
-  **Version YAML :**
-
-  http://localhost:8080/v3/api-docs.yaml
+  En version YAML: `http://localhost:8080/v3/api-docs.yaml`
 
 
 ## Frontend Vue.js
@@ -135,8 +131,8 @@ La spécification OpenAPI peut être généré de manière automatique du code s
 
 **Commandes de lancement**
 
-- Entrez dans le dossier : `cd frontend`.
-- Installez les outils : `npm install`.
+- Entrez dans le dossier : `cd frontend`
+- Installez les outils : `npm install`
 - Lancez le serveur : `npm run dev`
 
 ## Installation et utilisation de Tailwind
